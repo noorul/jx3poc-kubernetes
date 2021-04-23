@@ -8,11 +8,11 @@ spec:
     chartRepository: http://bucketrepo.jx.svc.cluster.local/bucketrepo/charts
     clusterName: kind
     devEnvApprovers:
-    - todo
-    environmentGitOwner: todo
+    - gvt
+    environmentGitOwner: gvt
     gitKind: github
     gitName: github
-    gitServer: https://github.com
+    gitServer: http://jxpoc.arubathena.com:7990
     provider: kubernetes
     registry: ghcr.io
   environments:
@@ -20,7 +20,7 @@ spec:
   - key: staging
   - key: production
   ingress:
-    domain: ""
+    domain: arubathena.com
     externalDNS: false
     namespaceSubDomain: -jx.
     tls:
